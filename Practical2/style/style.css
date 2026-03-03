@@ -1,0 +1,22 @@
+body{
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing:0.85px;
+}
+h2{
+    text-align: left;
+}
+ul{
+    text-shadow: 2px 2px cornflowerblue;
+}
+blockquote{
+    font-style: italic;
+}
+img{
+    max-width: 400px;
+}
+a{
+    text-decoration: underline;
+}
