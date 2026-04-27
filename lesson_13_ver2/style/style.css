@@ -1,0 +1,313 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #0f172b;
+    color: #f8fafc;
+    line-height: 1.5;
+}
+
+.wrapper{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0f172b;
+    padding: 20px 0;
+    z-index: 2;
+    border-bottom: 1px solid #1d293d;
+}
+
+
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo-blue{
+    color: #2b7fff;
+}
+
+.menu button{
+    font-size: 16px;
+    color: #bfcad7;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.menu button:hover{
+    color: #2b7fff;
+}
+
+
+main{
+    padding-top: 100px;
+}
+
+
+.choose{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+
+}
+
+.choose-up{
+    max-width: 600px;
+}
+
+.choose-title{
+    color: #51c5ff;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
+}
+
+.choose-p{
+    color: #909fb9;
+    font-size: 20px;
+}
+
+.choose-quotes .quotes{
+    color: #141d30;
+    font-size: 140px;
+    font-weight: bold;
+    letter-spacing: -15px;
+}
+
+
+.explore, .why, .learning{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.explore-title, .why-title, .learning-title{
+    position: sticky;
+    top: 73px;
+    background: #0f172b;
+    padding: 5px 0;
+    font-size: 28px;
+    font-weight: 700;
+    z-index: 1;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #1d293d;
+}
+
+
+.wrapper-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card{
+    background-color: #172136;
+    border: 1px solid #1d293d;
+    border-radius: 12px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card:hover{
+    border-color: #2b7fff;
+    box-shadow: 0 0 20px #2B7FFF1A;
+}
+
+.card .tag{
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    color: white;
+}
+
+.card:nth-child(1) .tag{
+    background-color: #ef4444;
+}
+.card:nth-child(2) .tag{
+    background-color: #22c55e;
+}
+.card:nth-child(3) .tag{
+    background-color: #3b82f6;
+}
+
+.card h4{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.card .p-card{
+    color: #909fb9;
+    font-size: 15px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span{
+    border: 1px solid #2a3b55;
+    color: #909fb9;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.card:hover .tags span{
+    color: #51c5ff;
+}
+
+.why-wrapper-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.why-card{
+    background-color: #172136;
+    border: 1px solid #1d293d;
+    border-radius: 12px;
+    padding: 30px 24px;
+}
+
+.why-card{
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.why-card h6{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.why-card p{
+    color: #909fb9;
+    font-size: 15px;
+}
+
+
+.wrapper-learning{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper-learning .learning-card{
+    background-color: #172136;
+    border: 1px solid #1d293d;
+    border-radius: 12px;
+    padding: 24px 30px;
+}
+
+
+
+.learning-card-up{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.learning-card-up h6{
+    font-size: 20px;
+}
+
+.learning-time{
+    color: #4b6386;
+    font-size: 12px;
+}
+
+.wrapper-learning .learning-card > p{
+    color: #909fb9;
+    font-size: 15px;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer .logo{
+    margin-bottom: 12px;
+}
+
+.footer-down{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #909fb9;
+    font-size: 14px;
+}
+
+
+.message{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #2b7fff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px #2B7FFF66;
+    z-index: 3;
+}
+
+.message:hover{
+    transform: scale(1.05);
+}
